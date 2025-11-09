@@ -64,21 +64,21 @@ let chocs = [
         description: "Dark chocolate with brittle toffee candy",
         calories: 90,
         ingredients: "Cocoa butter, Milk, Cream, toffee",
-        img: "../assets/toffee_crunch.jpg",
+        img: "assets/toffee_crunch.jpg",
     },
     {
         chocName: "Plain Supreme",
         description: "Dark chocolate with slivers of milk chocolate",
         calories: 90,
         ingredients: "Cocoa butter, Milk, Cream",
-        img: "./assets/plain_hybrid.jpg",
+        img: "assets/plain_hybrid.jpg",
     },
 ];
 
 
 function renderCards() {
     const $container = $('.cards');
-    $.each(chocs, function (choc) {
+    $.each(chocs, function (i, choc) {
         const $card = $(`
           <div class="card" style="background: #ffefefff;">
             <img src="${choc.img}">
